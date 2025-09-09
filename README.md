@@ -5,23 +5,22 @@
 ### Shock tubes (LF scheme)
 
 
-![Figure 1](/LFScheme_Plot1_CC.png)
+![Figure 1](/Plots/LFScheme_Plot1_CC.png)
 <br />
 **Figure 1**: Comparison of the exact shock tube (black line) to approximations determined using the Lax–Friedrichs scheme. The scheme was run once for 100 cells (light green) and again for 1000 cells (green). The initial conditions were: Left state (x < 0.3 at t = 0), ρ = 1, p = 1, v = 0.75. Right state: ρ = 0.125, p = 0.1, v = 0. Snapshots are taken at t = 0.2.
 <br />
+<br />
 
-![Figure 2](/LFScheme_Plot2_CC.png)
+![Figure 2](/Plots/LFScheme_Plot2_CC.png)
 <br />
 **Figure 2**: Comparison of the exact shock tube (black line) to approximations determined using the Lax–Friedrichs scheme. The scheme was run once for 100 cells (light green) and again for 1000 cells (green). The initial conditions were: Left state (x < 0.5 at t = 0), ρ = 1, p = 0.4, v = −2. Right state: ρ = 1, p = 0.4, v = 2. Snapshots are taken at t = 0.15.
 <br />
+<br />
 
-![Figure 3](/LFScheme_Plot1_SPC.png)
+![Figure 3](/Plots/LFScheme_Plot1_SPC.png)
 <br />
 **Figure 3**: Comparison of the exact shock tube (black line) to approximations determined using the Lax–Friedrichs scheme. The scheme was run once for 100 cells (light green) and again for 1000 cells (green). Here, a spherical grid was used instead of a Cartesian grid. The initial conditions were: Left state (r < 0.4 at t = 0), ρ = 1, p = 1, v = 0. Right state: ρ = 0.125, p = 0.1, v = 0. Snapshots are taken at t = 0.25.
 <br />
+<br />
 
 The attempt to implement the HLL scheme was unsuccessful (plots not shown). As the framework of the function was the same as that of the Lax–Friedrichs scheme, the error likely arose from a misunderstanding of how to compute the flux. Had the implementation been successful, we would expect the HLL scheme to provide a more accurate representation of the shock, as it is a more sophisticated Riemann solver. The plots show that increasing the number of cells yields results closer to the true shock profile.
-
-
-
-
